@@ -96,12 +96,13 @@ document.addEventListener('DOMContentLoaded', function() {
         initParticles();
     };
     
-    // Check for saved theme preference or use OS preference
+    // Saved theme preference or use light mode as default
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         setThemePreference(savedTheme === 'dark');
     } else {
-        setThemePreference(prefersDarkScheme.matches);
+        // Use light mode as default
+        setThemePreference(false);
     }
     
     // Add theme toggle functionality
@@ -115,7 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
     prefersDarkScheme.addEventListener('change', (e) => {
         // Only apply if user hasn't manually set a preference
         if (!localStorage.getItem('theme')) {
-            setThemePreference(e.matches);
+            // system changes to override the default
+            // setThemePreference(e.matches);
         }
     });
 
