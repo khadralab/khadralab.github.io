@@ -1,41 +1,45 @@
-name: Build and Deploy Hugo Site
+name: GitHub Pages
 
 on:
   push:
     branches:
-      - main  # default branch 
-  pull_request:
-  workflow_dispatch:  # Allow manual triggering
+      - main
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+    - uses: actions/checkout@v3
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.110.0'  
-          extended: true  # Set true if using Hugo Extended
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.111.3'
+        extended: true
 
-      - name: Build
-        run: hugo --minify
+    - name: Debug - List repository contents
+      run: |
+        ls -la
+        echo "Content directory:"
+        ls -la content || echo "No content directory found"
+        echo "Config directory:"
+        ls -la config || echo "No config directory found"
+        
+    - name: Build
+      run: |
+        hugo --config config.toml --minify --verbose
+        
+    - name: Debug - Check generated files
+      run: |
+        echo "Public directory contents:"
+        ls -la public || echo "No public directory found"
+        echo "Public directory structure:"
+        find public -type f | sort || echo "No files in public directory"
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'  # Only deploy when pushing to main
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages  # The branch the deployment is made to
-          cname: khadralab.github.io  # change to custom domain if available
-          commit_message: "Deploy site from ${{ github.sha }}"
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        publish_branch: gh-pages
