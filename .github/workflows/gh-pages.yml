@@ -1,0 +1,41 @@
+name: Build and Deploy Hugo Site
+
+on:
+  push:
+    branches:
+      - main  # default branch 
+  pull_request:
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.110.0'  
+          extended: true  # Set true if using Hugo Extended
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'  # Only deploy when pushing to main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages  # The branch the deployment is made to
+          cname: khadralab.github.io  # change to custom domain if available
+          commit_message: "Deploy site from ${{ github.sha }}"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
