@@ -1,0 +1,63 @@
+<!-- Lab News Timeline Section -->
+<section id="news" class="blog">
+    <div class="container">
+        <div class="section-header">
+            <h2>Lab News</h2>
+        </div>
+        
+        <!-- Optional category filters -->
+        <div class="timeline-filters text-center mb-4">
+            <button class="timeline-filter btn btn-sm active" data-category="all">All</button>
+            <button class="timeline-filter btn btn-sm" data-category="publication">Publications</button>
+            <button class="timeline-filter btn btn-sm" data-category="conference">Conferences</button>
+            <button class="timeline-filter btn btn-sm" data-category="grant">Grants</button>
+            <button class="timeline-filter btn btn-sm" data-category="award">Awards</button>
+        </div>
+        
+        <div class="timeline" data-aos="fade-up">
+            <div class="timeline-item" data-categories="publication">
+                <div class="timeline-content">
+                    <div class="timeline-date">January 30, 2025</div>
+                    <h3>New paper accepted in Nature</h3>
+                    <p>Our latest manuscript in collaboration with <a href="https://www.medicine.mcgill.ca/pharma/dbowielab/index.html">Bowie's lab</a> on neural excitability patterns has been accepted in Nature.</p>
+                    <span class="timeline-category">Publication</span>
+                    <a href="{{ "news" | relURL }}#paper-2025" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-categories="publication">
+                <div class="timeline-content">
+                    <div class="timeline-date">February 15, 2025</div>
+                    <h3>New paper accepted in Plos Computational Biology</h3>
+                    <p>Our latest manuscript on the contribution of action potential to EEG has been accepted in Plos Computational Biology.</p>
+                    <span class="timeline-category">Publication</span>
+                    <a href="{{ "news" | relURL }}#paper-2025" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-categories="conference">
+                <div class="timeline-content">
+                    <div class="timeline-date">May 22, 2024</div>
+                    <h3>Conference Presentation at ICMB 2024</h3>
+                    <p>Prof. Khadra delivered a keynote address on computational neurobiology at the International Conference on Mathematical Biology.</p>
+                    <span class="timeline-category">Conference</span>
+                    <a href="{{ "news" | relURL }}#conf-2024" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-categories="grant">
+                <div class="timeline-content">
+                    <div class="timeline-date">April 10, 2024</div>
+                    <h3>New Grant Awarded</h3>
+                    <p>Our lab received a major grant from NSERC to study stochastic dynamics in neural networks.</p>
+                    <span class="timeline-category">Grant</span>
+                    <a href="{{ "news" | relURL }}#grant-2024" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="{{ "news" | relURL }}" class="btn secondary-btn">View All News</a>
+        </div>
+    </div>
+</section>

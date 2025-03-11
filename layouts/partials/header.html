@@ -1,0 +1,30 @@
+<!-- Header & Navigation -->
+<header>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="{{ "/" | relURL }}">
+                    <img src="{{ "images/logo.png" | relURL }}" alt="Khadra Lab Logo" class="lab-logo">
+                    <span class="logo-text">{{ .Site.Title }}</span>
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="{{ "/" | relURL }}" class="nav-link {{ if .IsHome }}active{{ end }}">Home</a></li>
+                <li><a href="{{ "about" | relURL }}" class="nav-link {{ if eq .RelPermalink "/about/" }}active{{ end }}">About</a></li>
+                <li><a href="{{ "research" | relURL }}" class="nav-link {{ if eq .RelPermalink "/research/" }}active{{ end }}">Research</a></li>
+                <li><a href="{{ "publications" | relURL }}" class="nav-link {{ if eq .RelPermalink "/publications/" }}active{{ end }}">Publications</a></li>
+                <li><a href="{{ "software" | relURL }}" class="nav-link {{ if eq .RelPermalink "/software/" }}active{{ end }}">Software</a></li>
+                <li><a href="{{ "presentations" | relURL }}" class="nav-link {{ if eq .RelPermalink "/presentations/" }}active{{ end }}">Presentations</a></li>
+                <li><a href="{{ "news" | relURL }}" class="nav-link {{ if eq .RelPermalink "/news/" }}active{{ end }}">News</a></li>
+                <li><a href="{{ "members" | relURL }}" class="nav-link {{ if eq .RelPermalink "/members/" }}active{{ end }}">Members</a></li>
+                <li><a href="{{ "links" | relURL }}" class="nav-link {{ if eq .RelPermalink "/links/" }}active{{ end }}">Links</a></li>
+                <li><a href="{{ "contact" | relURL }}" class="nav-link {{ if eq .RelPermalink "/contact/" }}active{{ end }}">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>

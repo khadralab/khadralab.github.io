@@ -1,0 +1,45 @@
+---
+title: "Publications"
+layout: "default"
+---
+
+<!-- Publications Section -->
+<section id="publications" class="publications">
+    <div class="container">
+        <div class="section-header">
+            <h2>Publications</h2>
+            <p>Our research contributions and scientific publications</p>
+        </div>
+        
+        <!-- Filter Controls -->
+        <div class="publication-filters">
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label for="topic-filter"><i class="fas fa-tags"></i> Filter by Topic:</label>
+                    <select id="topic-filter" class="filter-select">
+                        <option value="all">All Topics</option>
+                        <!-- Topics are populated by js, see journal_to_topic file for details -->
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="year-filter"><i class="fas fa-calendar-alt"></i> Filter by Year:</label>
+                    <select id="year-filter" class="filter-select">
+                        <option value="all">All Years</option>
+                        <!-- Years will be populated by js, see publications.js for details -->
+                    </select>
+                </div>
+                <button id="reset-filters" class="btn secondary-btn">
+                    <i class="fas fa-sync-alt"></i> Reset Filters
+                </button>
+            </div>
+            <div class="filter-stats">
+                <span id="publication-count">0</span> publications found
+            </div>
+        </div>
+        
+        <div class="publications-content" id="publications-content">
+            <!-- Publications are loaded here using js, see publications.json file for the whole list -->
+            <p>Loading publications...</p>
+        </div>
+    </div>
+</section>

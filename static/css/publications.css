@@ -1,0 +1,167 @@
+/* Publications Section Styles */
+.publications {
+    background-color: var(--bg-light);
+}
+
+.publication-item {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+.publication-item:hover {
+    transform: translateY(-5px);
+}
+
+.publication-item h4 {
+    color: var(--heading-color);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.publication-item .authors {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.publication-item .journal, 
+.publication-item .conference {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+.publication-item .note,
+.publication-item .award {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.publications-content h3 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: var(--heading-color);
+}
+
+.publications-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.publications-content h3 i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* Publication Filters */
+.publication-filters {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--heading-color);
+    font-weight: 500;
+}
+
+.filter-group label i {
+    margin-right: 5px;
+    color: var(--primary-color);
+}
+
+.filter-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+}
+
+.filter-stats {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+#publication-count {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#reset-filters {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+/* Topic Badges */
+.topic-badge {
+    display: inline-block;
+    background-color: rgba(220, 38, 38, 0.1);
+    color: var(--primary-color);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+.topic-badge i {
+    font-size: 0.75rem;
+    margin-right: 3px;
+}
+
+body.dark-mode .topic-badge {
+    background-color: rgba(239, 68, 68, 0.15);
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+@media (max-width: 768px) {
+    .filter-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+}

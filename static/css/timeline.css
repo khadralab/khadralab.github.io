@@ -1,0 +1,170 @@
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* The vertical timeline line - moved to the left */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--primary-color, #DC2626);
+    top: 0;
+    bottom: 0;
+    left: 31px; /* Fixed left position */
+    border-radius: 2px;
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.2); /* Adjusted to red shade */
+}
+
+/* Container around content - all on left side */
+.timeline-item {
+    padding: 10px 40px 10px 70px; /* Adjusted padding */
+    position: relative;
+    width: 100%; /* Full width items */
+    margin-bottom: 30px;
+    left: 0; /* All items start from left */
+}
+
+/* The actual content boxes */
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+}
+
+/* The circles on the timeline - all on left */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 4px solid var(--primary-color, #DC2626);
+    top: 20px;
+    left: 21px; /* Fixed left position for all items */
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add arrows to timeline items - all pointing from left */
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    left: -20px;
+    border-right-color: white;
+}
+
+/* Timeline date style */
+.timeline-date {
+    background-color: var(--primary-color, #DC2626);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 10px rgba(220, 38, 38, 0.3); /* Adjusted to red shade */
+}
+
+/* Timeline title */
+.timeline-content h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+/* Timeline read more link */
+.timeline-content .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--primary-color, #DC2626);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.timeline-content .read-more:hover {
+    color: #b91c1c; /* Darker red for hover */
+    text-decoration: underline;
+}
+
+/* Categories tag style */
+.timeline-category {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+/* Responsive styling for mobile */
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item:nth-child(odd)::after,
+    .timeline-item:nth-child(even)::after {
+        left: 21px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content::before,
+    .timeline-item:nth-child(even) .timeline-content::before {
+        left: -20px;
+        border-right-color: white;
+        border-left-color: transparent;
+    }
+}
+
+/* Timeline filter buttons */
+.timeline-filters {
+    margin-bottom: 30px;
+}
+
+.timeline-filter {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    color: #555;
+    margin: 0 5px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.timeline-filter.active, 
+.timeline-filter:hover {
+    background-color: var(--primary-color, #DC2626);
+    color: white;
+    border-color: var(--primary-color, #DC2626);
+}

@@ -1,0 +1,343 @@
+/* ===== Global Styles ===== */
+:root {
+    /* Primary palette */
+    --primary-color: #DC2626;  
+    --secondary-color: #4a4a4a;
+
+    /* Text and heading colors for normal mode */
+    --heading-color: #1a1a1a; 
+    --text-color: #444444;    
+
+    /* Backgrounds */
+    --bg-color: #ffffff; 
+    --bg-light: #f9f9f9;
+    --bg-dark: #1a1a1a;
+
+    /* Footer or other darker sections in normal mode */
+    --footer-bg-color: #2c3e50;
+
+    /* Icon or "dark" elements (e.g., hamburger lines) in normal mode */
+    --icon-dark-color: #2c3e50;
+
+    /* Accent / highlight */
+    --accent-color: #EF4444; 
+
+    /* Borders, cards, shadows */
+    --border-color: #e0e0e0;
+    --card-bg: #f9f9f9;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    /* Transition */
+    --transition: all 0.3s ease;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 5rem;
+
+    /* Typography */
+    --font-main: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+}
+
+/* ===== Dark Mode Variables ===== */
+body.dark-mode {
+    --bg-color: #121212;         
+    --heading-color: #f5f5f5;  
+    --text-color: #cccccc;     
+
+    --card-bg: #1e1e1e;        
+    --border-color: #333333;   
+    --secondary-color: #bbbbbb;
+
+    --footer-bg-color: #222222;  
+    --icon-dark-color: #f5f5f5;  
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: var(--transition);
+}
+
+/* ===== Container ===== */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 var(--spacing-sm);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== Header Styles ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 2rem;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    color: #ecf0f1;
+    font-weight: 500;
+    position: relative;
+}
+
+.menu a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Navigation Link Styles for Header */
+header .nav-link {
+    color: #ecf0f1;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: var(--transition);
+    position: relative;
+}
+
+header .nav-link:hover,
+header .nav-link.active {
+    color: #ffffff;
+}
+
+header .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: var(--transition);
+}
+
+header .nav-link.active::after,
+header .nav-link:hover::after {
+    width: 100%;
+}
+
+/* ===== Main Content Styles ===== */
+main {
+    min-height: calc(100vh - 150px);
+    padding: var(--spacing-xl) 0;
+    margin-top: 80px;
+}
+
+.page-content, .page-list, .home-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+h1 {
+    color: var(--heading-color);
+    margin-bottom: var(--spacing-md);
+    font-size: 2.5rem;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    padding-top: 150px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background: 
+      linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+      url('../images/hero-bg.jpg') center / cover fixed;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+body.dark-mode .hero {
+    background: 
+      linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), 
+      url('../images/hero-bg.jpg') center / cover fixed;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--heading-color);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Footer Styles ===== */
+.footer {
+    background-color: var(--footer-bg-color);
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer .logo {
+    margin-bottom: 20px;
+}
+
+.footer .logo a {
+    color: #fff;
+}
+
+.footer p {
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.copyright {
+    margin-top: var(--spacing-md);
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* ===== Page Items ===== */
+.page-item {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 991px) {
+    .logo a img {
+        max-height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        height: auto;
+        padding: var(--spacing-sm);
+    }
+    
+    .menu {
+        margin-top: var(--spacing-sm);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .menu li {
+        margin: 0.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    nav {
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a img {
+        max-height: 35px;
+    }
+    
+    nav {
+        height: 60px;
+    }
+}

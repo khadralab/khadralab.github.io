@@ -1,0 +1,12 @@
+baseURL = "https://khadralab.github.io/"
+languageCode = "en-us"
+title = "Khadra Lab"
+theme = ""
+disableKinds = ["taxonomy", "taxonomyTerm"]
+relativeURLs = true
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

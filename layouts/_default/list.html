@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="page-list">
+    <h1>{{ .Title }}</h1>
+    <div class="content">
+        {{ .Content }}
+    </div>
+    
+    <div class="page-items">
+        {{ range .Pages }}
+        <div class="page-item">
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            {{ if .Params.description }}
+                <p>{{ .Params.description }}</p>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

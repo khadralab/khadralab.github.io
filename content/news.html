@@ -1,0 +1,84 @@
+---
+title: "Lab News & Updates"
+layout: "default"
+---
+
+<link rel="stylesheet" href="/assets/css/timeline.css">
+<script src="/assets/js/timeline.js" defer></script>
+
+<section class="news-page">
+    <div class="container">
+        <div class="section-header">
+            <h1>Lab News & Updates</h1>
+            <p>Latest publications, conferences, grants and achievements from our lab</p>
+        </div>
+        
+        <!-- Category filters -->
+        <div class="timeline-filters text-center my-4">
+            <button class="timeline-filter btn btn-sm active" data-category="all">All</button>
+            <button class="timeline-filter btn btn-sm" data-category="publication">Publications</button>
+            <button class="timeline-filter btn btn-sm" data-category="conference">Conferences</button>
+            <button class="timeline-filter btn btn-sm" data-category="grant">Grants</button>
+            <button class="timeline-filter btn btn-sm" data-category="award">Awards</button>
+        </div>
+        
+        <div class="timeline" data-aos="fade-up">
+            <!-- 2025 News -->
+            <div class="timeline-item" data-categories="publication" id="paper-2025">
+                <div class="timeline-content">
+                    <div class="timeline-date">January 30, 2025</div>
+                    <h3>New paper accepted in Nature</h3>
+                    <p>Our latest manuscript in collaboration with <a href="https://www.medicine.mcgill.ca/pharma/dbowielab/index.html">Bowie's lab</a> on neural excitability patterns has been accepted in Nature.</p>
+                    <p>The paper presents a novel mathematical framework for analyzing neural excitability in the presence of stochastic inputs, combining experimental data with computational modeling to predict neural responses under varying conditions.</p>
+                    <p><strong>Authors:</strong> Smith J, Johnson M, Williams A, <strong>Khadra A</strong>, Bowie D.</p>
+                    <span class="timeline-category">Publication</span>
+                    <a href="https://www.nature.com" target="_blank" class="read-more">View Publication</a>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-categories="publication">
+                <div class="timeline-content">
+                    <div class="timeline-date">February 15, 2025</div>
+                    <h3>New paper accepted in Plos Computational Biology</h3>
+                    <p>Our latest manuscript on the contribution of action potential to EEG has been accepted in Plos Computational Biology.</p>
+                    <p>This study develops a multi-scale model that bridges the gap between single neuron activity and macroscopic EEG recordings, providing new insights into the interpretation of clinical EEG data.</p>
+                    <p><strong>Authors:</strong> Chen L, Garcia R, <strong>Khadra A</strong>.</p>
+                    <span class="timeline-category">Publication</span>
+                    <a href="https://journals.plos.org/ploscompbiol/" target="_blank" class="read-more">View Publication</a>
+                </div>
+            </div>
+            
+            <!-- 2024 News -->
+            <div class="timeline-item" data-categories="conference" id="conf-2024">
+                <div class="timeline-content">
+                    <div class="timeline-date">May 22, 2024</div>
+                    <h3>Conference Presentation at ICMB 2024</h3>
+                    <p>Prof. Khadra delivered a keynote address on computational neurobiology at the International Conference on Mathematical Biology.</p>
+                    <p>The presentation, titled "Bridging Scales in Neural Systems: From Molecular Dynamics to Network Behavior," highlighted recent advances from our lab in developing multi-scale models of neural activity.</p>
+                    <span class="timeline-category">Conference</span>
+                    <a href="#" class="read-more">View Presentation Slides</a>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-categories="grant" id="grant-2024">
+                <div class="timeline-content">
+                    <div class="timeline-date">April 10, 2024</div>
+                    <h3>New Grant Awarded</h3>
+                    <p>Our lab received a major grant from NSERC to study stochastic dynamics in neural networks.</p>
+                    <p>The 5-year project, "Stochastic Dynamics and Information Processing in Neural Networks," will investigate how noise and randomness contribute to robust information processing in biological and artificial neural systems.</p>
+                    <span class="timeline-category">Grant</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-categories="award">
+                <div class="timeline-content">
+                    <div class="timeline-date">March 15, 2024</div>
+                    <h3>Graduate Student Award</h3>
+                    <p>Lab member Sarah Johnson received the Best Poster Award at the Canadian Neuroscience Meeting for her work on "Parameter Estimation in Hodgkin-Huxley Models Using Machine Learning Approaches."</p>
+                    <span class="timeline-category">Award</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>

@@ -1,0 +1,28 @@
+name: Update Publications
+
+on:
+  schedule:
+    - cron: '0 0 1 */3 *' # every 3 months
+  workflow_dispatch:  
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: pip install scholarly
+    - name: Run script
+      run: python update_publications.py
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add publications.json
+        git commit -m "Update publications.json" || echo "No changes to commit"
+        git push

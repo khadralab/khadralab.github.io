@@ -1,0 +1,448 @@
+.software-section {
+    padding: 4rem 0;
+    background-color: var(--bg-light, #f9f9f9);
+}
+
+.software-item {
+    background-color: var(--bg-color, #fff);
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.software-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Default row layout */
+.software-item .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.software-item .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0;
+}
+
+.software-item .col-lg-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    padding: 2rem;
+}
+
+/* Banner layout for wide images */
+.software-item.banner-layout .row {
+    flex-direction: column;
+}
+
+.software-item.banner-layout .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.software-item.banner-layout .software-image-container {
+    height: 300px; /* Fixed height for banner images */
+    width: 100%;
+}
+
+.software-item.banner-layout .col-lg-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Image container styling - crucial for proper sizing */
+.software-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure images fill their container appropriately */
+.software-image {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.5s ease;
+    /* Default object-fit will be set by JS based on dimensions */
+}
+
+.software-item:hover .software-image {
+    transform: scale(1.05);
+}
+
+/* Content styling */
+.software-item h3 {
+    color: var(--heading-color, #1a1a1a);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.software-item h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color, #DC2626);
+}
+
+.software-item h4 {
+    color: var(--heading-color, #1a1a1a);
+    font-size: 1.1rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.software-item p {
+    color: var(--secondary-color, #4a4a4a);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.features-list {
+    padding-left: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.features-list li {
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    color: var(--text-color, #444444);
+}
+
+.features-list li::before {
+    content: '•';
+    color: var(--primary-color, #DC2626);
+    font-weight: bold;
+    position: absolute;
+    left: -12px;
+}
+
+.software-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.software-links .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.software-links .btn i {
+    font-size: 1.1rem;
+}
+
+.software-tag {
+    display: inline-block;
+    background-color: rgba(220, 38, 38, 0.1);
+    color: var(--primary-color, #DC2626);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.paper-citation {
+    background-color: #f8f9fa;
+    border-left: 3px solid var(--primary-color, #DC2626);
+    padding: 12px 15px;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+.software-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color, #DC2626);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    z-index: 2;
+}
+
+/* Image placeholder when no image is available */
+.image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f0f0f0 25%, #e6e6e6 25%, #e6e6e6 50%, #f0f0f0 50%, #f0f0f0 75%, #e6e6e6 75%);
+    background-size: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder i {
+    font-size: 3rem;
+    color: #ccc;
+}
+
+/* Specific fit modes for images */
+.software-image.fit-height {
+    width: auto;
+    height: 100%;
+    max-width: none; /* Override to allow centering */
+    margin: 0 auto;
+}
+
+.software-image.fit-width {
+    width: 100%;
+    height: auto;
+}
+
+.software-image.fit-contain {
+    object-fit: contain;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    .software-item .col-lg-4,
+    .software-item .col-lg-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .software-image-container {
+        height: 300px;
+    }
+    
+    /* Force all layouts to banner on mobile */
+    .software-item .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .software-item {
+        margin-bottom: 2rem;
+    }
+    
+    .software-item .col-lg-8 {
+        padding: 1.5rem;
+    }
+    
+    .software-item h3 {
+        font-size: 1.4rem;
+    }
+    
+    .software-links {
+        flex-direction: column;
+    }
+    
+    .software-links .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Code Repository Section Styling */
+.code-section {
+    padding: 4rem 0;
+    background-color: var(--bg-light, #f9f9f9);
+    border-top: 1px solid var(--border-color, #e0e0e0);
+}
+
+.code-item {
+    background-color: var(--bg-color, #fff);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow, 0 5px 15px rgba(0, 0, 0, 0.1));
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-left: 5px solid var(--primary-color, #DC2626);
+    position: relative;
+}
+
+.code-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.code-item::before {
+    content: none;
+}
+
+.code-content {
+    padding: 2.5rem;
+    position: relative;
+}
+
+.code-item h3 {
+    color: var(--heading-color, #1a1a1a);
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.code-item p {
+    color: var(--secondary-color, #4a4a4a);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.code-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+    gap: 10px;
+}
+
+.code-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(220, 38, 38, 0.08);
+    color: var(--primary-color, #DC2626);
+    padding: 6px 14px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(220, 38, 38, 0.1);
+}
+
+.code-tag:hover {
+    background-color: var(--primary-color, #DC2626);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.code-links {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-top: 1.8rem;
+}
+
+.code-links .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.code-links .btn:hover {
+    transform: translateY(-3px);
+}
+
+.code-links .btn i {
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+}
+
+.code-links .btn:hover i {
+    transform: scale(1.2);
+}
+
+.code-citation {
+    margin-top: 1.5rem;
+    padding: 15px;
+    background-color: var(--bg-light, #f9f9f9);
+    border-left: 3px solid var(--primary-color, #DC2626);
+    font-size: 0.9rem;
+    color: var(--secondary-color, #4a4a4a);
+}
+
+.code-citation a {
+    color: var(--primary-color, #DC2626);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+}
+
+/* Language indicator with theme colors */
+.code-language {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.code-language.matlab {
+    background-color: var(--primary-color, #DC2626);
+}
+
+.code-language.python {
+    background-color: var(--primary-color, #2666dc);
+    opacity: 0.9;
+}
+
+.code-language.r {
+    background-color: var(--primary-color, #835705);
+    opacity: 0.8;
+}
+
+.code-language.julia {
+    background-color: var(--primary-color, #428f04);
+    opacity: 0.8;
+}
+
+.code-language.fortran {
+    background-color: var(--primary-color, #a104d1);
+    opacity: 0.8;
+}
+/* Responsive styles for code section */
+@media (max-width: 768px) {
+    .code-content {
+        padding: 1.8rem;
+    }
+    
+    .code-item h3 {
+        font-size: 1.3rem;
+        padding-right: 80px; /* Make room for the language badge */
+    }
+    
+    .code-links {
+        flex-direction: column;
+    }
+    
+    .code-links .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .code-language {
+        top: 1.8rem;
+        right: 1.2rem;
+    }
+}
