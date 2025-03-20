@@ -50,5 +50,4 @@ yarn-error.log*
 # temporary ignore for under development files
 content/news.html
 content/presentations.html
-content/research.html
 update_publications.py

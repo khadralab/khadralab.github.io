@@ -10,7 +10,7 @@
             </div>
             <ul class="menu">
                 <li><a href="{{ "/" | relURL }}" class="nav-link {{ if .IsHome }}active{{ end }}">Home</a></li>
-                <!-- li><a href="{{ "research" | relURL }}" class="nav-link {{ if eq .RelPermalink "/research/" }}active{{ end }}">Research</a></li -->
+                <li><a href="{{ "research" | relURL }}" class="nav-link {{ if eq .RelPermalink "/research/" }}active{{ end }}">Research</a></li>
                 <!-- li><a href="{{ "news" | relURL }}" class="nav-link {{ if eq .RelPermalink "/news/" }}active{{ end }}">News</a></li -->
                 <li><a href="{{ "members" | relURL }}" class="nav-link {{ if eq .RelPermalink "/members/" }}active{{ end }}">Members</a></li>
                 <li><a href="{{ "publications" | relURL }}" class="nav-link {{ if eq .RelPermalink "/publications/" }}active{{ end }}">Publications</a></li>
