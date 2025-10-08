@@ -1,0 +1,339 @@
+{
+  "current": [
+    {
+      "name": "Dr. Claire Guerrier",
+      "position": "Visiting Scholar",
+      "category": "Visiting Scholars and Postdoctoral Fellows",
+      "project": "Conduction Velocity in Myelinated Axonal Fibers",
+      "email": "claire.guerrier@univ-cotedazur.fr",
+      "image": "guerrier_claire.jpg"
+    },
+    {
+      "name": "Jonas Lehnert",
+      "position": "PhD Candidate",
+      "category": "PhD Students",
+      "project": "Visual Information Processing in the Raphe and LGN",
+      "email": "jonas.lehnert@mail.mcgill.ca",
+      "image": "lehnert_jonas.jpg"
+    },
+    {
+      "name": "Amin Akhshi",
+      "position": "PhD Candidate",
+      "category": "PhD Students",
+      "project": "Analyzing Spike and Burst Synchrony in Sensory Systems",
+      "email": "amin.akhshi@mail.mcgill.ca",
+      "image": "akhshi_amin.jpg"
+    },
+    {
+      "name": "Louis Richez",
+      "position": "PhD Candidate",
+      "category": "PhD Students",
+      "project": "Modeling Immune Cell Dynamics",
+      "email": "louis.richez@mail.mcgill.ca",
+      "image": "riches_louis.jpg"
+    },
+    {
+      "name": "Nils Koch",
+      "position": "PhD Candidate",
+      "category": "PhD Students",
+      "project": "Characterizing Cerebellar Stellate Cell Excitability",
+      "email": "nils.koch@mail.mcgill.ca",
+      "image": "koch_nils.jpg"
+    },
+    {
+      "name": "Xinyue Ma",
+      "position": "PhD Student",
+      "category": "PhD Students",
+      "project": "Visual Information Processing",
+      "email": "xinyue.ma@mail.mcgill.ca",
+      "image": "ma_xinyue.jpg"
+    },
+    {
+      "name": "Nianqi Deng",
+      "position": "PhD Student",
+      "category": "PhD Students",
+      "project": "Image Analysis of Spinal Cord Cross-Sections using Machine Learning",
+      "email": "nianqi.deng@mail.mcgill.ca",
+      "image": "deng_nianqi.jpg"
+    },
+    {
+      "name": "Ryan Huang",
+      "position": "PhD Student",
+      "category": "PhD Students",
+      "project": "Analyzing Brain Rhythms during Loss and Gain of Consciousness",
+      "email": "ryan.huang1@mail.mcgill.ca",
+      "image": "huang_ryan.jpg"
+    },
+    {
+      "name": "Rian Fritz D. Jalandoni",
+      "position": "PhD Student",
+      "category": "PhD Students",
+      "project": "Characterizing Brain Activity Using Computational Modeling",
+      "email": "rian.jalandoni@mail.mcgill.ca",
+      "image": "jalandoni_fritz.jpg"
+    },
+    {
+      "name": "Muhammad Ahmad",
+      "position": "PhD Student",
+      "category": "PhD Students",
+      "project": "Reverse Engineering Substrates of Memory in Primate Brain",
+      "email": "muhammad.m.ahmad@mail.mcgill.ca",
+      "image": "moustafa_muhammad.jpg"
+    },
+    {
+      "name": "Grace Sabourin",
+      "position": "B.Sc. student",
+      "category": "Undergraduate Students",
+      "project": "Modeling Calcium Dynamics in Astrocytes"
+    },
+    {
+      "name": "Yifan Zhao",
+      "position": "B.Sc. student",
+      "category": "Undergraduate Students",
+      "project": "Characterizing Neural Responses of Cerebellar Stellate Cells"
+    },
+    {
+      "name": "Elena Prescott",
+      "position": "B.Sc. student",
+      "category": "Undergraduate Students",
+      "project": "Examining the Role of Calcium in Cell Motility"
+    }
+  ],
+  "former": [
+    {
+      "name": "Dr. Saeed Farjami",
+      "note": "Current Position (2022): Research Fellow, University of Exeter, UK.",
+      "category": "Former Visiting Scholars, Postdoctoral Fellows, and Research Assistants"
+    },
+    {
+      "name": "Dr. John Mitry",
+      "note": "Current Position (2018): Lecturer, Macquarie University International College, Sydney, Australia.",
+      "category": "Former Visiting Scholars, Postdoctoral Fellows, and Research Assistants"
+    },
+    {
+      "name": "Tina Maria Mitre",
+      "note": "(R.A.) – Current Position (2018): Data Scientist, Bell, Montreal, Canada.",
+      "category": "Former Visiting Scholars, Postdoctoral Fellows, and Research Assistants"
+    },
+    {
+      "name": "Dr. Majid Jaberi-Douraki",
+      "note": "Current Position (2015): Assistant Professor, Kansas State University, USA.",
+      "category": "Former Visiting Scholars, Postdoctoral Fellows, and Research Assistants"
+    },
+    {
+      "name": "Dr. Niklas Brake",
+      "note": "Current Position (2024): Postdoctoral Fellow, McGill University, Montreal, Canada.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Dr. Hassan Jamaleddine",
+      "note": "Current Position (2024): Postdoctoral Fellow, NIH, Bethesda, USA.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Dr. Laurentiu Oprea",
+      "note": "Current Position (2024): Postdoctoral Fellow, University of Western Ontario, London, Canada.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Dr. Laurent Mackay",
+      "note": "Current Position (2021): Postdoctoral Fellow, University of British Columbia, Vancouver, Canada.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Xinyue Ma",
+      "note": "(M.Sc.) – Current Position (2024): Ph.D. Student, McGill University, Montreal, Canada.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Lucie Plazen",
+      "note": "(M.Sc.) – Current Position (2022): Project Manager (Design and Modeling), Carbone 4, Paris, France.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Nasri Balit",
+      "note": "(M.Sc.) – Current Position (2022): Research Assistant, McGill University, Montreal, Canada.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Khoren Ponsin",
+      "note": "(M.Sc.) – Current Position (2021): Ph.D. Student, The Rockefeller University, New York City, USA.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Jessica Lyda",
+      "note": "(M.Sc.) – Current Position (2020): Technical Writer, Certara, Waterloo, Canada.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Kaixi (Kathy) Tang",
+      "note": "(M.Sc.) – Current Position (2018): Program Policy Officer, Transport Canada, Ottawa, Canada.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Manuela Pineros-Rodriguez",
+      "note": "(M.Sc.) – Current Position (2023): Ph.D. Student, Ecole Polytechnique Federale de Lausanne, Switzerland.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Tina Maria Mitre",
+      "note": "(M.Sc.) – Current Position (2016): Research Assistant, McGill University, Canada.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Shang Wan (Shalon) Liu",
+      "note": "(M.Sc.) – Current Position (2023): Diagnostic and Molecular Pathology Resident, Queen's University, Kingston, Canada.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Laurent Mackay",
+      "note": "(M.Sc.) – Current Position (2015): Ph.D. Student, McGill University, Canada.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Spencer Moran",
+      "note": "(M.Sc.) – Current Position (2023): Investment Engineer, Brooklyn Investment Group, USA.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Calvin Surbey",
+      "note": "(May-Aug 2023)",
+      "category": "Former Rotational QLS Ph.D. Students"
+    },
+    {
+      "name": "Benjamin Rudski",
+      "note": "(Jan-Apr 2022)",
+      "category": "Former Rotational QLS Ph.D. Students"
+    },
+    {
+      "name": "Henry Denny",
+      "note": "(Sept-Dec 2021)",
+      "category": "Former Rotational QLS Ph.D. Students"
+    },
+    {
+      "name": "Preethi Ravikumar",
+      "note": "(Sept-Dec 2019)",
+      "category": "Former Rotational QLS Ph.D. Students"
+    },
+    {
+      "name": "Lamin Juwara",
+      "note": "(Jan-Apr 2018)",
+      "category": "Former Rotational QLS Ph.D. Students"
+    },
+    {
+      "name": "Myriah Hagaard",
+      "note": "(Jan-Apr 2018)",
+      "category": "Former Rotational QLS Ph.D. Students"
+    },
+    {
+      "name": "Esther Koehl",
+      "note": "(B.Sc.) - 2024. Home Institution: University of Poitiers.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Lilian Lotte",
+      "note": "(B.Sc.) - 2024. Home Institution: University of Poitiers.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Lucas Jourdain",
+      "note": "(B.Sc.) - 2024. Home Institution: University of Poitiers.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Dorian Girard",
+      "note": "(B.Sc.) - 2024. Home Institution: University of Poitiers.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Martin Lardy",
+      "note": "(M.Sc.) - 2023. Home Institution: Claude Bernard University Lyon.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Eloise Poupelin",
+      "note": "(B.Sc.) - 2023. Home Institution: University of Poitiers.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Yannis Berry",
+      "note": "(B.Sc.) - 2022. Home Institution: University of Poitiers.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Melyna Lefevre-Romy",
+      "note": "(B.Sc.) - 2022. Home Institution: University of Poitiers.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Clara Dumas",
+      "note": "(B.Sc.) - 2022. Home Institution: University of Poitiers.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Lucie Plazen",
+      "note": "(M.Sc.) - 2021. Home Institution: Ecole Polytechnique.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Etienne Lehman",
+      "note": "(B.Sc.) - 2019. Home Institution: University of Lyon.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Theo Bardon",
+      "note": "(B.Sc.) - 2019. Home Institution: University of Poitiers.",
+      "category": "Former Visiting Students"
+    },
+    {
+      "name": "Evan Jiang",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
+    },
+    {
+      "name": "Julie (Yiqing) Zhu",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
+    },
+    {
+      "name": "Kian Mavalwala",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
+    },
+    {
+      "name": "Sean Fletcher",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
+    },
+    {
+      "name": "Yiyang Wang",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
+    },
+    {
+      "name": "Eric (Yitao) Sun",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
+    },
+    {
+      "name": "Victor Chen",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
+    },
+    {
+      "name": "Salma Tenni",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
+    },
+    {
+      "name": "Christopher Todireanu",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
+    },
+    {
+      "name": "Haley (Huilin) Tai",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
+    }
+  ]
+}

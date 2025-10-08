@@ -1,0 +1,124 @@
+name: Update Data 
+
+on:
+  schedule:
+    # Members: 00:30 UTC on 1 Sep, 1 Jan, 1 Apr
+    - cron: '30 0 1 9 *'
+    - cron: '30 0 1 1 *'
+    - cron: '30 0 1 4 *'
+    # Publications: every 3 months (Jan, Apr, Jul, Oct)
+    - cron: '0 0 1 */3 *'
+  workflow_dispatch: {}
+
+jobs:
+  update-members:
+    name: Update Members
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Skip if not member months
+        id: check-members-month
+        shell: bash
+        run: |
+          month=$(date -u +%m)
+          echo "Current UTC month: $month"
+          if [[ "$month" != "01" && "$month" != "04" && "$month" != "09" ]]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "Not a members update month; exiting early."
+            exit 0
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run members update script
+        if: steps.check-members-month.outputs.skip == 'false'
+        run: |
+          python3 scripts/update_members.py
+
+      - name: Create PR if members changed
+        id: create-pr-members
+        if: steps.check-members-month.outputs.skip == 'false'
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: update members (automated)'
+          branch: 'auto/update-members-${{ github.run_number }}'
+          title: 'Automated: update members from data source'
+          body: 'This PR was created automatically by the scheduled workflow to update lab members.'
+          base: ${{ github.ref_name }}
+          labels: 'auto-update'
+
+      - name: Enable auto-merge for members PR
+        if: steps.check-members-month.outputs.skip == 'false'
+        uses: peter-evans/enable-pull-request-automerge@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.create-pr-members.outputs['pull-request-number'] }}
+          merge-method: squash
+
+  update-publications:
+    name: Update Publications
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install scholarly
+
+      - name: Skip if not publications months
+        id: check-pubs-month
+        shell: bash
+        run: |
+          month=$(date -u +%m)
+          echo "Current UTC month: $month"
+          # publications run in Jan(01), Apr(04), Jul(07), Oct(10)
+          if [[ "$month" != "01" && "$month" != "04" && "$month" != "07" && "$month" != "10" ]]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "Not a publications update month; exiting early."
+            exit 0
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run publications update script
+        if: steps.check-pubs-month.outputs.skip == 'false'
+        run: |
+          python3 update_publications.py
+
+      - name: Create PR if publications changed
+        id: create-pr-pubs
+        if: steps.check-pubs-month.outputs.skip == 'false'
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: update publications (automated)'
+          branch: 'auto/update-publications-${{ github.run_number }}'
+          title: 'Automated: update publications from source'
+          body: 'This PR was created automatically by the scheduled workflow to update publications.'
+          base: ${{ github.ref_name }}
+          labels: 'auto-update'
+
+      - name: Enable auto-merge for publications PR
+        if: steps.check-pubs-month.outputs.skip == 'false'
+        uses: peter-evans/enable-pull-request-automerge@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.create-pr-pubs.outputs['pull-request-number'] }}
+          merge-method: squash
