@@ -9,22 +9,6 @@
       "image": "guerrier_claire.jpg"
     },
     {
-      "name": "Jonas Lehnert",
-      "position": "PhD Candidate",
-      "category": "PhD Students",
-      "project": "Visual Information Processing in the Raphe and LGN",
-      "email": "jonas.lehnert@mail.mcgill.ca",
-      "image": "lehnert_jonas.jpg"
-    },
-    {
-      "name": "Amin Akhshi",
-      "position": "PhD Candidate",
-      "category": "PhD Students",
-      "project": "Analyzing Spike and Burst Synchrony in Sensory Systems",
-      "email": "amin.akhshi@mail.mcgill.ca",
-      "image": "akhshi_amin.jpg"
-    },
-    {
       "name": "Louis Richez",
       "position": "PhD Candidate",
       "category": "PhD Students",
@@ -81,6 +65,12 @@
       "image": "moustafa_muhammad.jpg"
     },
     {
+      "name": "Leqi (Sammy) Wang",
+      "position": "PhD Student",
+      "category": "PhD Students",
+      "email": "leqi.wang2@mail.mcgill.ca"
+    },
+    {
       "name": "Grace Sabourin",
       "position": "B.Sc. student",
       "category": "Undergraduate Students",
@@ -119,6 +109,16 @@
       "name": "Dr. Majid Jaberi-Douraki",
       "note": "Current Position (2015): Assistant Professor, Kansas State University, USA.",
       "category": "Former Visiting Scholars, Postdoctoral Fellows, and Research Assistants"
+    },
+      {
+      "name": "Dr. Amin Akhshi",
+      "note": "Current Position (2025): TBD.",
+      "category": "Former Graduate Students"
+    },
+    {
+      "name": "Dr. Jonas Lehnert",
+      "note": "Current Position (2025): TBD.",
+      "category": "Former Graduate Students"
     },
     {
       "name": "Dr. Niklas Brake",
