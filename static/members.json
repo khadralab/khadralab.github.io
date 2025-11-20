@@ -68,13 +68,9 @@
       "name": "Leqi (Sammy) Wang",
       "position": "PhD Student",
       "category": "PhD Students",
-      "email": "leqi.wang2@mail.mcgill.ca"
-    },
-    {
-      "name": "Grace Sabourin",
-      "position": "B.Sc. student",
-      "category": "Undergraduate Students",
-      "project": "Modeling Calcium Dynamics in Astrocytes"
+      "project": "Modeling Calcium Signaling in Oligodendrocytes and Pericytes",
+      "email": "leqi.wang2@mail.mcgill.ca",
+      "image": "sammy_wang.jpg"
     },
     {
       "name": "Yifan Zhao",
@@ -284,6 +280,11 @@
       "name": "Theo Bardon",
       "note": "(B.Sc.) - 2019. Home Institution: University of Poitiers.",
       "category": "Former Visiting Students"
+    },
+    {
+      "name": "Grace Sabourin",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
     },
     {
       "name": "Evan Jiang",
