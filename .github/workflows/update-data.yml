@@ -2,10 +2,10 @@ name: Update Data
 
 on:
   schedule:
-    # Members: 00:30 UTC on 1 Sep, 1 Jan, 1 Apr
-    - cron: '30 0 1 9 *'
-    - cron: '30 0 1 1 *'
-    - cron: '30 0 1 4 *'
+    # Members: 00:30 UTC on 1 Oct, 1 Feb, 1 May
+    - cron: '30 0 1 10 *'
+    - cron: '30 0 1 2 *'
+    - cron: '30 0 1 5 *'
     # Publications: every 3 months (Jan, Apr, Jul, Oct)
     - cron: '0 0 1 */3 *'
   workflow_dispatch: {}
