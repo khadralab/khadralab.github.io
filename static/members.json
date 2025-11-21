@@ -76,13 +76,43 @@
       "name": "Yifan Zhao",
       "position": "B.Sc. student",
       "category": "Undergraduate Students",
-      "project": "Characterizing Neural Responses of Cerebellar Stellate Cells"
+      "project": "Characterizing Circuit Dynamics of Neurons in the Marmoset PFC and V1"
     },
     {
-      "name": "Elena Prescott",
+      "name": "Maeve Albert",
       "position": "B.Sc. student",
       "category": "Undergraduate Students",
       "project": "Examining the Role of Calcium in Cell Motility"
+    },
+    {
+      "name": "Guillaume Miao",
+      "position": "B.Sc. student",
+      "category": "Undergraduate Students",
+      "project": "Image Analysis Using Deep Learning"
+    },
+    {
+      "name": "Lena Apcher",
+      "position": "B.Sc. student",
+      "category": "Undergraduate Students",
+      "project": "Characterizing Features of Neural Firing Patterns"
+    },
+    {
+      "name": "Mary Glenne Ketsia Moussy",
+      "position": "B.Sc. student",
+      "category": "Undergraduate Students",
+      "project": "Modeling Calcium Dynamics in Pericytes"
+    },
+    {
+      "name": "Matthew Ruthard",
+      "position": "B.Sc. student",
+      "category": "Undergraduate Students",
+      "project": "Modeling Calcium Dynamics in T Cells"
+    },
+    {
+      "name": "Marie Lecocq",
+      "position": "B.Sc. student",
+      "category": "Undergraduate Students",
+      "project": "Modeling Calcium Dynamics in T Cells"
     }
   ],
   "former": [
@@ -113,7 +143,7 @@
     },
     {
       "name": "Dr. Jonas Lehnert",
-      "note": "Current Position (2025): TBD.",
+      "note": "Current Position (2025): Postdoctoral Fellow, University of Ottawa, Ottawa, Canada.",
       "category": "Former Graduate Students"
     },
     {
@@ -280,6 +310,11 @@
       "name": "Theo Bardon",
       "note": "(B.Sc.) - 2019. Home Institution: University of Poitiers.",
       "category": "Former Visiting Students"
+    },
+    {
+      "name": "Elena Prescott",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
     },
     {
       "name": "Grace Sabourin",
