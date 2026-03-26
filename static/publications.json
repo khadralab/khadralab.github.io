@@ -536,14 +536,6 @@
         "topic": "Mathematics"
     },
     {
-        "title": "Theoretical quantification of the polyvalent binding of nanoparticles coated with peptide-major histocompatibility complex to T cell receptor-nanoclusters",
-        "authors": "Manuela Pineros-Rodriguez and Louis Richez and Anmar Khadra",
-        "journal": "Mathematical Biosciences",
-        "year": 2023,
-        "url": "https://www.sciencedirect.com/science/article/pii/S0025556423000366",
-        "topic": "Mathematical Biology"
-    },
-    {
         "title": "Probing visual sensitivity and attention in mice using reverse correlation",
         "authors": "Jonas Lehnert and Kuwook Cha and Kerry Yang and Daniel F Zheng and Anmar Khadra and Erik P Cook and Arjun Krishnaswamy",
         "journal": "bioRxiv",
@@ -640,19 +632,19 @@
         "topic": "Cell Biology"
     },
     {
-        "title": "Characterizing the role of Ca2+ fluxes in defining fast and slow components of spontaneous Ca2+ local transients in OPCs using computational modeling",
-        "authors": "Nicolas Desjardins and Xiaoyu Jiang and Laurentiu Oprea and Kushagra Sareen and James Q Zheng and Anmar Khadra",
-        "journal": "bioRxiv",
+        "title": "Characterizing spontaneous Ca2+ local transients in OPCs using computational modeling",
+        "authors": "Laurentiu Oprea and Nicolas Desjardins and Xiaoyu Jiang and Kushagra Sareen and James Q Zheng and Anmar Khadra",
+        "journal": "Biophysical Journal",
         "year": 2022,
-        "url": "https://www.biorxiv.org/content/10.1101/2022.06.02.494570.abstract",
+        "url": "https://www.cell.com/biophysj/fulltext/S0006-3495(22)00905-5",
         "topic": "Other"
     },
     {
         "title": "Theoretical Quantification of the Polyvalent Binding of Nanoparticles Coated with Peptide-MHC to TCR-Nanoclusters",
         "authors": "Manuela Pineros-Rodriguez and Louis Richez and Anmar Khadra",
-        "journal": "bioRxiv",
-        "year": 2022,
-        "url": "https://www.biorxiv.org/content/10.1101/2022.03.04.483017.abstract",
+        "journal": "Mathematical Biosciences",
+        "year": 2023,
+        "url": "https://www.sciencedirect.com/science/article/pii/S0025556423000366",
         "topic": "Other"
     },
     {
@@ -765,14 +757,6 @@
         "journal": "Available at SSRN 3919937",
         "year": "N/A",
         "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3919937",
-        "topic": "Other"
-    },
-    {
-        "title": "Theoretical Quantification of the Polyvalent Binding of Nanoparticles Coated with Peptide-MHC to TCR-Nanoclusters MAnUsCRiPt",
-        "authors": "Manuela Pineros-Rodriguez and Louis Richez and Anmar Khadra",
-        "journal": "N/A",
-        "year": "N/A",
-        "url": "https://www.researchgate.net/profile/Anmar-Khadra/publication/359042750_Theoretical_Quantification_of_the_Polyvalent_Binding_of_Nanoparticles_Coated_with_Peptide-MHC_to_TCR-Nanoclusters/links/6224aac284ce8e5b4d0b73f7/Theoretical-Quantification-of-the-Polyvalent-Binding-of-Nanoparticles-Coated-with-Peptide-MHC-to-TCR-Nanoclusters.pdf",
         "topic": "Other"
     },
     {
