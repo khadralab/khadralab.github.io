@@ -101,18 +101,6 @@
       "position": "B.Sc. student",
       "category": "Undergraduate Students",
       "project": "Modeling Calcium Dynamics in Pericytes"
-    },
-    {
-      "name": "Matthew Ruthard",
-      "position": "B.Sc. student",
-      "category": "Undergraduate Students",
-      "project": "Modeling Calcium Dynamics in T Cells"
-    },
-    {
-      "name": "Marie Lecocq",
-      "position": "B.Sc. student",
-      "category": "Undergraduate Students",
-      "project": "Modeling Calcium Dynamics in T Cells"
     }
   ],
   "former": [
@@ -310,6 +298,16 @@
       "name": "Theo Bardon",
       "note": "(B.Sc.) - 2019. Home Institution: University of Poitiers.",
       "category": "Former Visiting Students"
+    },
+    {
+      "name": "Marie Lecocq",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
+    },
+    {
+      "name": "Matthew Ruthard",
+      "note": "(B.Sc.)",
+      "category": "Former Undergraduate Students"
     },
     {
       "name": "Elena Prescott",
