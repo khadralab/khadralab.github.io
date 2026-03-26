@@ -101,6 +101,24 @@
       "position": "B.Sc. student",
       "category": "Undergraduate Students",
       "project": "Modeling Calcium Dynamics in Pericytes"
+    },
+    {
+      "name": "Adrian Yehia",
+      "position": "B.Sc. student",
+      "category": "Undergraduate Students",
+      "project": "Analyzing PVIN Neural Excitability in the Spinal Cord"
+    },
+    {
+      "name": "Toscana Urbano",
+      "position": "B.Sc. student",
+      "category": "Undergraduate Students",
+      "project": "Modeling Neural Dynamics in Alzheimer"
+    },
+    {
+      "name": "Nicholas Da Costa-Bastidas",
+      "position": "B.Sc. student",
+      "category": "Undergraduate Students",
+      "project": "Modeling Calcium Dynamics in T Cells"
     }
   ],
   "former": [
