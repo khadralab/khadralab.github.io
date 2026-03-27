@@ -774,5 +774,37 @@
         "year": "N/A",
         "url": "http://www.atiner.gr/papers/PHY-CHE-2013-0882.pdf",
         "topic": "Other"
+    },
+    {
+        "title": "Dendritic Interaction of Timescales in Afterdepolarization Potentials and Nonmonotonic Spike-Adding",
+        "authors": "Nils A. Koch and Yifan Zhao and Anmar Khadra",
+        "journal": "Journal of Computational Neuroscience",
+        "year": 2026,
+        "url": "https://link.springer.com/article/10.1007/s10827-025-00917-2",
+        "topic": "Neuroscience"
+    },
+    {
+        "title": "In Vivo Neural Activity of Electrosensory Pyramidal Cells: Biophysical Characterization and Phenomenological Modeling",
+        "authors": "Amin Akhshi and Michael G Metzen and Maurice J Chacron and Anmar Khadra",
+        "journal": "PLoS Computational Biology",
+        "year": 2025,
+        "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013711",
+        "topic": "Neuroscience"
+    },
+    {
+        "title": "GluA2-Containing AMPA Receptors form a Continuum of Ca2+-Permeable Channels",
+        "authors": "Federico Miguez-Cabello and Xin-tong Wang and Yuhao Yan and Niklas Brake and Ryan P. D. Alexander and Amanda M. Perozzo and Anmar Khadra & Derek Bowie",
+        "journal": "Nature",
+        "year": 2025,
+        "url": "https://www.nature.com/articles/s41586-025-08736-2",
+        "topic": "Neuroscience"
+    },
+    {
+        "title": "Deciphering Heterogeneity of ATP-Induced Ca2+ Responses in Osteoblasts Using the Flux-Balance Model",
+        "authors": "Anthony Quint and Nicholas Mikolajewicz and Svetlana V Komarova and Anmar Khadra",
+        "journal": "International Conference on Applied Mathematics, Modeling and Computational Science. Cham: Springer Nature Switzerland",
+        "year": 2025,
+        "url": "",
+        "topic": "Mathematics"
     }
 ]
