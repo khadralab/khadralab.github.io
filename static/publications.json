@@ -496,14 +496,6 @@
         "topic": "Other"
     },
     {
-        "title": "Decoding the relative contributions of extrinsic and intrinsic mechanisms in mediating heterogeneous spiking activities of sensory neurons in vivo using computational modeling",
-        "authors": "Amin Akhshi and Myriah Haggard and Mariana M Marquez and Saeed Farjami and Maurice J Chacron and Anmar Khadra",
-        "journal": "bioRxiv",
-        "year": 2023,
-        "url": "https://www.biorxiv.org/content/10.1101/2023.01.03.521866.abstract",
-        "topic": "Other"
-    },
-    {
         "title": "Calcium buffering tunes intrinsic excitability of spinal dorsal horn parvalbumin-expressing interneurons: A computational model",
         "authors": "Xinyue Ma",
         "journal": "N/A",
@@ -534,14 +526,6 @@
         "year": 2009,
         "url": "https://www.sciencedirect.com/science/article/pii/S0960077909001581",
         "topic": "Mathematics"
-    },
-    {
-        "title": "Probing visual sensitivity and attention in mice using reverse correlation",
-        "authors": "Jonas Lehnert and Kuwook Cha and Kerry Yang and Daniel F Zheng and Anmar Khadra and Erik P Cook and Arjun Krishnaswamy",
-        "journal": "bioRxiv",
-        "year": 2022,
-        "url": "https://www.biorxiv.org/content/10.1101/2022.09.08.507101.abstract",
-        "topic": "Other"
     },
     {
         "title": "Relative Voltage Sensor Activation Kinetics Determines the Effects of Sensor Neutralization in Voltage-Gated Sodium Channels",
