@@ -49,8 +49,3 @@ vendor/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-
-# temporary ignore for under development files
-content/presentations.html
-update_publications.py
