@@ -1,9 +1,19 @@
+{{ define "main" }}
 <!-- Lab News Timeline Section -->
 <section id="news" class="blog">
     <div class="container">
         <div class="section-header">
-            <h2>Lab News</h2>
-            <p>Recent happenings and announcements from our lab</p>
+            <h2>Lab News & Updates</h2>
+            <p>Recent happenings, achievements, and announcements from our lab</p>
+        </div>
+        
+        <!-- Optional category filters -->
+        <div class="timeline-filters text-center mb-4">
+            <button class="timeline-filter btn btn-sm active" data-category="all">All</button>
+            <button class="timeline-filter btn btn-sm" data-category="publication">Publications</button>
+            <button class="timeline-filter btn btn-sm" data-category="conference">Conferences</button>
+            <button class="timeline-filter btn btn-sm" data-category="grant">Grants</button>
+            <button class="timeline-filter btn btn-sm" data-category="award">Awards</button>
         </div>
         
         {{ $news := slice }}
@@ -21,7 +31,7 @@
         {{ end }}
 
         <div class="timeline" data-aos="fade-up">
-            {{ range first 5 (sort $news "date" "desc") }}
+            {{ range sort $news "date" "desc" }}
             <div class="timeline-item" data-categories="{{ .category }}" id="news-{{ .date }}">
                 <div class="timeline-icon">
                     <i class="fas {{ if eq .category "award" }}fa-trophy{{ else if eq .category "grant" }}fa-hand-holding-dollar{{ else if eq .category "publication" }}fa-book-open{{ else if eq .category "conference" }}fa-chalkboard-user{{ else }}fa-star{{ end }}"></i>
@@ -35,9 +45,6 @@
             </div>
             {{ end }}
         </div>
-        
-        <div class="text-center mt-5">
-            <a href="{{ "news" | relURL }}" class="btn secondary-btn">View All News History</a>
-        </div>
     </div>
 </section>
+{{ end }}

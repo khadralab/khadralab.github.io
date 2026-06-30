@@ -33,7 +33,7 @@ END_MARKER = '<!-- MEMBERS_AUTOGEN_END -->'
 FORMER_START = '<!-- FORMER_MEMBERS_AUTOGEN_START -->'
 FORMER_END = '<!-- FORMER_MEMBERS_AUTOGEN_END -->'
 
-DEFAULT_JSON = os.path.join(ROOT, 'static', 'members.json')
+DEFAULT_JSON = os.path.join(ROOT, 'data', 'members.json')
 
 
 def fetch_json(url_or_path):

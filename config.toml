@@ -10,3 +10,7 @@ relativeURLs = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[security]
+  allowContent = [".*"]
+

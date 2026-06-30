@@ -141,7 +141,8 @@
         "journal": "Nature communications",
         "year": 2024,
         "url": "https://www.nature.com/articles/s41467-024-45922-8",
-        "topic": "Interdisciplinary"
+        "topic": "Interdisciplinary",
+        "selected": true
     },
     {
         "title": "Autoimmune responses in T1DM: quantitative methods to understand onset, progression, and prevention of disease",
@@ -309,7 +310,8 @@
         "journal": "Journal of Neuroscience",
         "year": 2023,
         "url": "https://www.jneurosci.org/content/43/31/5608.abstract",
-        "topic": "Neuroscience"
+        "topic": "Neuroscience",
+        "selected": true
     },
     {
         "title": "Dynamics of mechanosensitive nascent adhesion formation",
@@ -437,7 +439,8 @@
         "journal": "Plos Biology",
         "year": 2024,
         "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002465",
-        "topic": "Biology"
+        "topic": "Biology",
+        "selected": true
     },
     {
         "title": "The dual role of autoimmune regulator in maintaining normal expression level of tissue-restricted autoantigen in the thymus: A modeling investigation",
@@ -565,7 +568,8 @@
         "journal": "Cell Reports",
         "year": 2025,
         "url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(24)01510-9?uuid=uuid%3Afa96e1b1-3c2e-4bda-91bc-8f1c204f902f",
-        "topic": "Cell Biology"
+        "topic": "Cell Biology",
+        "selected": true
     },
     {
         "title": "The geometry of pMHC-coated nanoparticles and T-cell receptor clusters governs the sensitivity-specificity trade-off in T-cell response: a modeling investigation.",
